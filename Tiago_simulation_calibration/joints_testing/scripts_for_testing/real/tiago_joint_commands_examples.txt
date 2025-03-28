@@ -1,0 +1,92 @@
+
+Standard pose:
+
+
+rostopic pub /arm_left_controller/command trajectory_msgs/JointTrajectory "header:
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+joint_names: 
+  - 'arm_left_1_joint'
+  - 'arm_left_2_joint'
+  - 'arm_left_3_joint'
+  - 'arm_left_4_joint'
+  - 'arm_left_5_joint'
+  - 'arm_left_6_joint'
+  - 'arm_left_7_joint'
+points:
+  - positions: [-1, 1.5, 2.8, 1.7, -2.0, -0.3, -0.5]
+    velocities: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    accelerations: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    time_from_start: {secs: 5, nsecs: 0}"
+
+
+
+
+rostopic pub /arm_right_controller/command trajectory_msgs/JointTrajectory "header:
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+joint_names: 
+  - 'arm_right_1_joint'
+  - 'arm_right_2_joint'
+  - 'arm_right_3_joint'
+  - 'arm_right_4_joint'
+  - 'arm_right_5_joint'
+  - 'arm_right_6_joint'
+  - 'arm_right_7_joint'
+points:
+  - positions: [-0.98, 1.40, 2.78, 1.78, -1.44, -0.28, 0.17]
+    velocities: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    accelerations: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    time_from_start: {secs: 5, nsecs: 0}"
+
+
+
+0-pose:
+
+rostopic pub /arm_left_controller/command trajectory_msgs/JointTrajectory "header:
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+joint_names: 
+  - 'arm_left_1_joint'
+  - 'arm_left_2_joint'
+  - 'arm_left_3_joint'
+  - 'arm_left_4_joint'
+  - 'arm_left_5_joint'
+  - 'arm_left_6_joint'
+  - 'arm_left_7_joint'
+points:
+  - positions: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    velocities: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    accelerations: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    time_from_start: {secs: 5, nsecs: 0}"
+
+rostopic pub /arm_right_controller/command trajectory_msgs/JointTrajectory "header:
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+joint_names: 
+  - 'arm_right_1_joint'
+  - 'arm_right_2_joint'
+  - 'arm_right_3_joint'
+  - 'arm_right_4_joint'
+  - 'arm_right_5_joint'
+  - 'arm_right_6_joint'
+  - 'arm_right_7_joint'
+points:
+  - positions: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    velocities: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    accelerations: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    time_from_start: {secs: 5, nsecs: 0}"
+
+
+
+rostopic pub /head_controller/command trajectory_msgs/JointTrajectory "header:
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+joint_names: 
+  - 'head_1_joint'
+  - 'head_2_joint'
+points:
+  - positions: [0.0, -1.0]   # Replace with desired positions for each joint
+    velocities: [0.0, 0.0]  # Replace with desired velocities for each joint
+    accelerations: [0.0, 0.0]  # Replace with desired accelerations for each joint
+    time_from_start: {secs: 5, nsecs: 0}"

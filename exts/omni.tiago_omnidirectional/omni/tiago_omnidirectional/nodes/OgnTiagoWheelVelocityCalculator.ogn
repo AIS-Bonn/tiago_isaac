@@ -1,0 +1,41 @@
+{
+    "OgnTiagoWheelVelocityCalculator": {
+        "version": 2,
+        "description": "Tiago Wheel Velocity Calculator",
+        "language": "Python",
+        "categories": {
+            "isaacSim": "Given the desired vehicle speed, this node calculates corresponding wheel speeds."
+        },
+        "metadata": {
+            "uiName": "Tiago Wheel Velocity Calculator"
+        },
+        "$comment": "Given the desired vehicle speed, this node calculates corresponding wheel speeds.",
+        "inputs": {
+            "execIn": {
+                "type": "execution",
+                "description": "The input execution"
+            },
+            "wheelRadius": {
+                "type": "double",
+                "description": "Radius of the wheels"
+            },
+            "wheelPositions": {
+                "type": "double[2]",
+                "description": "x and y distance of the wheels to the chassis' center of mass"
+            },
+            "inputVelocity":{
+                "type":  "double[3]", 
+                "description": "Twist command: velocity in x and y direction and rotation",
+                "metadata": {
+                    "uiName": "Velocity Commands for the vehicle"
+                }
+            }
+        },
+        "outputs":{
+            "jointVelocityCommand":{
+                "type": "double[]",
+                "description": "velocity commands for the wheels joints"
+            }         
+        }
+    }
+}

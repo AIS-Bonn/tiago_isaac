@@ -1,0 +1,88 @@
+{
+    "OgnOmnidirectionalVelocityController": {
+        "version": 1,
+        "description": "",
+        "language": "Python",
+        "metadata": {
+            "uiName": "Simulates omnidirectional drive"
+        },
+        "inputs": {
+            "execIn": {
+                "type": "execution",
+                "description": "The input execution"
+            },
+            "targetPrim": {
+                "type": "target",
+                "description": "The target robot prim",
+                "optional": true
+            },
+            "usePath": {
+                "type": "bool",
+                "description": "use robot and com path instead of selecting them from stage tree",
+                "default": false
+            },            
+            "robotPath":{
+                "type": "string",
+                "description": "path to the robot articulation root"
+            },
+
+            
+            "linearX": {
+                "type": "double",
+                "description": "Desired linear velocity in the X direction"
+            },
+            "linearY": {
+                "type": "double",
+                "description": "Desired linear velocity in the Y direction"
+            },
+            "angularZ": {
+                "type": "double",
+                "description": "Desired angular velocity around the Z axis"
+            },
+            "deltaTime": {
+                "type": "double",
+                "description": "Time passed since last update.",
+                "default": 0.016
+            },
+            "directlySetVelocity":{
+                "type": "bool",
+                "description": "If set to true, the robot velocity will be set directly according to the fitted acceleration behavior.",
+                "default": false
+            },
+            "wheelRadius": {
+                "type": "double",
+                "description": "Radius of the wheels"
+            },
+            "wheelPositions": {
+                "type": "double[2]",
+                "description": "x and y distance of the wheels to the chassis' center of mass"
+            },
+            "maxLinearSpeed": {
+                "type": "double",
+                "description": "maximum speed allowed for the vehicle",
+                "optional": "true",
+                "default": 100000
+            },
+            "maxAngularSpeed": {
+                "type": "double",
+                "description": "maximum angular rotation speed allowed for the vehicle",
+                "optional": "true",
+                "default": 100000               
+            }
+        },
+        "outputs": {
+            "linearX": {
+                "type": "double",
+                "description": "New target linear velocity in the X direction. If directlySetVelocity is false, you should feed this into the holonomic controller."
+            },
+            "linearY": {
+                "type": "double",
+                "description": "New target linear velocity in the Y direction. If directlySetVelocity is false, you should feed this into the holonomic controller."
+            },
+            "angularZ": {
+                "type": "double",
+                "description": "New target angular velocity around the Z axis. If directlySetVelocity is false, you should feed this into the holonomic controller."
+            }
+        }
+    }
+}

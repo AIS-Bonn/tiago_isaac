@@ -1,0 +1,10 @@
+
+
+# To run the simulations, start the Isaac sim simulation
+# And then use the following command:
+
+for file in test_commands/*.txt; do python3 automated_recording_sim.py "$file"; done
+
+
+
+python3 automated_square_trajectory_recording_sim.py test_commands/square.txt

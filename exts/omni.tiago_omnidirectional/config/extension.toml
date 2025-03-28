@@ -1,0 +1,36 @@
+
+[package]
+# Semantic Versioning is used: https://semver.org/
+version = "0.1.0"
+
+# Lists people or organizations that are considered the "authors" of the package.
+authors = ["Vincent Schoenbach"]
+
+# The title and description fields are primarly for displaying extension info in UI
+title = "Tiago robot base movement simulation extension"
+description="Required for simulating the Tiago robot."
+
+# Path (relative to the root) or content of readme markdown file for UI.
+readme  = "docs/README.md"
+
+# URL of the extension source repository.
+repository="https://github.com/AIS-Bonn/tiago_isaac"
+
+# Categories for UI.
+category = "Tiago"
+
+# Keywords for the extension
+keywords = ["robot", "tiago"]
+
+# Watch the .ogn files for hot reloading (only works for Python files)
+[fswatcher.patterns]
+include = ["*.ogn", "*.py"]
+exclude = ["Ogn*Database.py"]
+
+[dependencies]
+"omni.kit.test" = {}
+"omni.graph" = {}
+
+# Main python module this extension provides, it will be publicly available as "import omni.tiago_omnidirectional".
+[[python.module]]
+name = "omni.tiago_omnidirectional"

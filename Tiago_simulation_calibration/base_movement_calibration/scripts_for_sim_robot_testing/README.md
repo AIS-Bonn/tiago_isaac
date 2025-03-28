@@ -1,0 +1,1 @@
+This folder contains scripts allowing us to control and test the simulated robot.

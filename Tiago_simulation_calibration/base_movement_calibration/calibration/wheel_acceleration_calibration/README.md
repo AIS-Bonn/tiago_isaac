@@ -1,0 +1,3 @@
+In the fit_acceleration_curve folder, we learn an S-like-curve function from the real robot's acceleration behavior data.
+Turns out that it's hard to fit such an S curve accurately for all types of driving behaviors,
+but we tried our best to get a good trade-off. Among the functions that we tried to fit, the final fitted function we chose is a piecewise function consisting of two softplus functions as pieces, one softplus function being flipped such that the shape looks like an S.

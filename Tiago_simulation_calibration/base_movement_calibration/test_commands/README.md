@@ -1,0 +1,1 @@
+This folder contains the generation script for the motion commands that are used for testing and calibration.

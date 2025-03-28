@@ -1,0 +1,1 @@
+This folder contains scripts allowing us to record bag files of motion commands for the simulated Tiago robot.

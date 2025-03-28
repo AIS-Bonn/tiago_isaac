@@ -1,0 +1,23 @@
+
+arm_left_1_joint: 0.5225
+arm_left_2_joint: -0.7821
+arm_left_3_joint: 0.0
+arm_left_4_joint: 0.0
+arm_left_5_joint: 0.0
+arm_left_6_joint: 0.0
+arm_left_7_joint: 0.0
+
+arm_right_1_joint: 0.6856
+arm_right_2_joint: 0.3827
+arm_right_3_joint: 0.852
+arm_right_4_joint: 2.0068
+arm_right_5_joint: 1.6329
+arm_right_6_joint: -0.5271
+arm_right_7_joint: 0.0
+gripper_left_left_finger_joint: 0.045
+gripper_left_right_finger_joint: 0.045
+gripper_right_left_finger_joint: 0.045
+gripper_right_right_finger_joint: 0.0427
+head_1_joint: 1.309
+head_2_joint: 0.599
+torso_lift_joint: 0.2551
