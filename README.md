@@ -351,10 +351,13 @@ The extension implements two custom **Action Graph nodes**:
 1. **OgnTiagoWheelVelocityCalculator**
 
 <img src="assets/images/action_graph_node1.png" alt="action graph node 1" width="300"/>
+
    - Calculates the conversion from the Twist movement command into target wheel velocities for the four wheels.
+
 2. **OgnOmnidirectionalVelocityController**
 
 <img src="assets/images/action_graph_node2.png" alt="action graph node 2" width="700"/>
+
    - Computes velocity profiles that simulate realistic acceleration behavior.
    - If the heavy simulation is enabled (uncheck *directlySetVelocity*), it returns the current velocity of the base as computed due to the fitted velocity profile. You then need to feed this velocity into an *OgnTiagoWheelVelocityCalculator* node.
    - If the light simulation is enabled (check *directlySetVelocity*) it immediately sets the robot base velocity according to the velocity profile.
