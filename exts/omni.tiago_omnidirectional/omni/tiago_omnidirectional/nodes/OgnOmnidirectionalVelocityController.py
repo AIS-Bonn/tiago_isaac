@@ -90,7 +90,7 @@ class OmnidirectionalControllerInternalState(BaseResetNode):
 
                 # Use the total velocity change to get the S-curve parameters
                 # This velocity change is the sum of the linear and angular velocity changes
-                total_velocity_change_x = abs(linear_velocity_command[0]-cur_linear_velocity[0]) - (abs(angular_velocity_command-cur_angular_velocity)%(2*np.pi)) * self.wheel_positions[1]
+                total_velocity_change_x = abs(linear_velocity_command[0]-cur_linear_velocity[0]) + (abs(angular_velocity_command-cur_angular_velocity)%(2*np.pi)) * self.wheel_positions[1]
                 total_velocity_change_y = abs(linear_velocity_command[1]-cur_linear_velocity[1]) + (abs(angular_velocity_command-cur_angular_velocity)%(2*np.pi)) * self.wheel_positions[0]
                 total_velocity_change = np.sqrt(total_velocity_change_x**2 + total_velocity_change_y**2) 
                 total_velocity_change_wheel_reference = total_velocity_change / self.wheel_radius
