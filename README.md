@@ -1,6 +1,6 @@
 # TIAGo++ Simulation in Isaac Sim
 
-This repository contains a working Isaac Sim simulation of the Pal Robotics TIAGo++ robot with Mecanum wheels. For more detailed technical explanations, please also refer to [our paper (link TODO)].
+This repository contains a working Isaac Sim simulation of the Pal Robotics TIAGo++ robot with Mecanum wheels. For more detailed technical explanations, please also refer to [our accompanying paper](https://arxiv.org/abs/2510.10273).
 
 ## Table of Contents
 - [Video Demo](#video-demo)
@@ -371,7 +371,7 @@ The extension implements two custom **Action Graph nodes**:
 
 > This section is optional for users who just want to run the simulation.  
 > However, it may be helpful for those who want to simulate other robots or understand the internals.  
-> For more detailed explanations, please refer to [our paper (TODO link)].
+> For more detailed explanations, please refer to [our accompanying paper](https://arxiv.org/abs/2510.10273).
 
 Getting the TIAGo++ robot to work with realistic omnidirectional movement in Isaac Sim required multiple modifications and design decisions.
 
