@@ -33,11 +33,7 @@ This repository contains a working Isaac Sim simulation of the Pal Robotics TIAG
 ## Video Demo
 
 *video_demo.mp4* provides a demonstration of the simulation in action.
-
-<video width="640" height="360" controls>
-  <source src="./video_demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[Download the demo video](https://github.com/AIS-Bonn/tiago_isaac/blob/main/video_demo.mp4)
 
 ---
 
